@@ -1,0 +1,8 @@
+@at-root{
+    $component: ".header__socials";
+
+    #{$component}{
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}        
+    }
+}

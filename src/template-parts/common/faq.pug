@@ -1,0 +1,18 @@
+section.section.-faq#sectionFaq 
+    ._container.container 
+        ._inner 
+            h2._title 
+                | Частые вопросы 
+
+            .faq._faq
+                each item in settings.page.faq
+                    ._item 
+                        h3._title
+                            != item.title
+
+                        ._text
+                            != item.text
+
+
+
+                            

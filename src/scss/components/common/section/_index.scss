@@ -1,0 +1,15 @@
+.section{
+	@import "section";
+	@import "_inner";
+	@import "_title";
+	@import "_subtitle";
+	@import "_text";
+	@import "_contacts";
+	@import "_contact";
+	@import "_control";
+	@import "_socials";
+
+	@import "_cases";
+	@import "_team";
+	@import "_faq";
+}

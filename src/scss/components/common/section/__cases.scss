@@ -1,0 +1,17 @@
+@at-root{
+    $component: ".section__cases";
+
+    #{$component}{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @include bp("sm", "down"){
+            flex-direction: column;
+        }
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+}

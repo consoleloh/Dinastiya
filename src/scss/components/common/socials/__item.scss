@@ -1,0 +1,18 @@
+@at-root{
+    $component: ".socials__item";
+
+    #{$component}{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: get-color(blue);
+        transition: fill 0.3s;
+
+        &:hover{
+            fill: get-color(blue-dark);
+        }
+        
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}        
+    }
+}

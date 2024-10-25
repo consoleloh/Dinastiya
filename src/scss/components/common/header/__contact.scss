@@ -1,0 +1,20 @@
+@at-root{
+    $component: ".header__contact";
+
+    #{$component}{
+        font-size: 12px;
+        line-height: 100%;
+        color: get-color(blue);
+
+        @include bp("sm", "up"){
+            font-size: 24px;
+        }
+        @include bp("lg", "up"){
+            transition: color 0.3s;
+        }
+
+        &:hover{
+            color: get-color(blue-dark);
+        }
+    }
+}

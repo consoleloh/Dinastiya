@@ -1,0 +1,28 @@
+@at-root{
+    $component: ".social__icon";
+
+    #{$component}{
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}        
+    }
+
+    .header__socials{
+        #{$component}{
+            @include bp("sm", "down"){
+                font-size: 14px;
+            }
+            @include bp("sm", "up"){}
+            @include bp("lg", "up"){}        
+        }
+    }
+
+    .section--consultation{
+        #{$component}{
+            font-size: 32px;
+            height: 32px;
+
+            @include bp("sm", "up"){}
+            @include bp("lg", "up"){}        
+        }
+    }
+}

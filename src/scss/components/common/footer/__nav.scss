@@ -1,0 +1,17 @@
+@at-root{
+    $component: ".footer__nav";
+
+    #{$component}{
+        color: rgba(get-color(white), 0.5);
+        
+        @include bp("sm", "up"){
+            display: flex;
+            flex-basis: 100%;
+            margin-bottom: 30px;
+        }
+        @include bp("lg", "up"){
+            flex-basis: 66%;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+section.section.-stages#sectionStages
+    ._container.container 
+        ._inner 
+            h2._title 
+                | Этапы работа
+
+            .faq._faq
+                each item in settings.page.stages
+                    ._item 
+                        h3._title
+                            != item.title
+
+                        ._text
+                            != item.text

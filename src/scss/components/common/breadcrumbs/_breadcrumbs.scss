@@ -1,0 +1,14 @@
+@at-root{
+    $component: &;
+
+    #{$component}{
+        
+        @include bp("sm", "up"){}
+        @include bp("lg", "down"){
+            display: none;
+        }
+        @include bp("lg", "up"){
+            margin-bottom: 40px;
+        }
+    }
+}

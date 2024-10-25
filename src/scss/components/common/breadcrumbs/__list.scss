@@ -1,0 +1,14 @@
+@at-root{
+    $component: ".breadcrumbs__list";
+
+    #{$component}{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0 0 40px;
+        padding: 0;
+        
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}
+    }
+}

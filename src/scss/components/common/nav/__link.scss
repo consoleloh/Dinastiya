@@ -1,0 +1,22 @@
+@at-root{
+    $component: ".nav__link";
+
+    #{$component}{
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){
+            transition: color 0.3s;
+        }        
+    }
+
+    .footer__nav{
+        #{$component}{
+
+            @include bp("sm", "up"){}
+            @include bp("lg", "up"){}
+            
+            &:hover{
+                color: get-color(white);
+            }
+        }
+    }
+}

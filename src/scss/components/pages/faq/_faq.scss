@@ -1,0 +1,20 @@
+@at-root{
+    $component: &;
+
+    #{$component}{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @include bp("sm", "up"){
+            gap: 40px;
+        }
+        @include bp("lg", "up"){
+            gap: 50px;
+        }
+    }
+
+    .section--stages{
+        counter-reset: stage;
+    }
+}

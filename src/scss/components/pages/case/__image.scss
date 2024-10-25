@@ -1,0 +1,16 @@
+@at-root{
+    $component: ".case__image";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){}
+        
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}

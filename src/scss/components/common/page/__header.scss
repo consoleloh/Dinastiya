@@ -1,0 +1,17 @@
+@at-root{
+    $component: ".page__header";
+
+    #{$component}{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: get-color(white);
+        z-index: 1000;
+
+        @include bp("sm", "up"){
+            padding: 15px 0;
+        }
+        @include bp("lg", "up"){}
+    }
+}

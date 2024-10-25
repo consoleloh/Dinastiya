@@ -1,0 +1,68 @@
+@at-root{
+    $component: ".contacts__item";
+
+    #{$component}{
+        
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}
+    }
+
+    .page__header{
+        #{$component}{
+            @include bp("lg", "up"){
+            }
+
+            &--user,
+            &--phone{
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                transition: 0.3s;
+
+                img{
+                    transition: filter 0.3s;
+                }
+
+                &:hover{
+                    color: get-color(secondary-dark);
+
+                    img{
+                        filter: brightness(95%);
+                    }
+                }
+            }
+
+            &--user{
+                position: relative;
+
+                &:after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 30px;
+                    width: calc(100% - 30px);
+                    height: 1px;
+                    background-color: get-color(black);
+                    transition: background-color 0.3s;
+                }
+
+                &:hover{
+                    &:after{
+                        background-color: get-color(secondary-dark);
+                    }
+                }
+            }
+
+            &--phone{
+                font-weight: 700;
+            }
+        }
+        .contacts__list--bottom{
+            #{$component}{
+                @include bp("sm", "down"){
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

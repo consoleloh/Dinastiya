@@ -1,0 +1,9 @@
+@at-root{
+    $component: ".person__position";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){}
+    }
+}

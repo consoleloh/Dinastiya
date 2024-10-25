@@ -1,0 +1,10 @@
+@at-root{
+    $component: ".page__body";
+
+    #{$component}{
+        flex: 1;
+        
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}        
+    }
+}

@@ -1,0 +1,14 @@
+@at-root{
+    $component: ".breadcrumbs__link";
+
+    #{$component}{
+        transition: color 0.3s;
+
+        &:hover{
+            color: get-color(secondary-dark);
+        }
+
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}
+    }
+}

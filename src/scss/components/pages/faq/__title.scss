@@ -1,0 +1,72 @@
+@at-root{
+    $component: ".faq__title";
+
+    #{$component}{
+        position: relative;
+        padding-right: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        
+        @include bp("sm", "up"){
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @include bp("lg", "up"){
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            // background-color: get-color(blue);
+            background-image: url("data:image/svg+xml;utf8,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 11.4286H11.4286V20H8.57143V11.4286H0V8.57143H8.57143V0H11.4286V8.57143H20V11.4286Z' fill='%231a6a9d'/></svg>");
+            background-position: center;
+            background-repeat: no-repeat;
+            // transform: translateY(-50%);
+            transition: transform 0.3s;
+
+            @include bp("sm", "up"){
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &:hover{
+            color: get-color(blue);
+        }
+
+        &--active{
+            color: get-color(blue);
+
+            &:after{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .section--stages{
+        #{$component}{
+            &:before{
+                content: "Этап " counter(stage);
+                display: block;
+                font-size: 16px;
+                color: get-color(blue);
+            }
+
+            &:after{
+                top: 24px;
+
+                @include bp("sm", "up"){
+                    top: 30px;
+                }
+            }
+        }
+    }
+}

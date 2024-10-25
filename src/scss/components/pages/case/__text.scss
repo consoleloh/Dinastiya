@@ -1,0 +1,30 @@
+@at-root{
+    $component: ".case__text";
+
+    #{$component}{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        color: get-color(white);
+        background-color: rgba(get-color(blue-dark), 0.75);
+
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+
+        a{
+            display: flex;
+            max-width: 300px;
+            margin: 15px auto 0;
+
+            &:hover{
+                color: get-color(blue-dark);
+                background-color: get-color(white);
+            }
+        }
+    }
+}

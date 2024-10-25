@@ -1,0 +1,18 @@
+@at-root{
+    $component: ".gallery__thumb";
+
+    #{$component}{
+        overflow: hidden;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        cursor: pointer;
+
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){}
+
+        &.swiper-slide-thumb-active{
+            border: 2px solid get-color(secondary);
+        }
+    }
+}

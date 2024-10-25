@@ -1,0 +1,20 @@
+.container{
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+
+	@include bp("sm", "up"){
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	@include bp("lg", "up"){
+	}
+
+	@each $key, $breakpoint in $breakpoints{
+		@if $key != default{
+			@include container($breakpoint);
+		}
+	}
+}

@@ -1,0 +1,22 @@
+@at-root{
+    $component: ".breadcrumbs__item";
+
+    #{$component}{
+        display: flex;
+        font-size: 16px;
+        line-height: 19px;
+        color: get-color(black);
+
+        &:not(:last-child){
+            color: get-color(breadcrumbs-link);
+
+            &:after{
+                content: url("data:image/svg+xml;utf8,<svg width='5' height='9' viewBox='0 0 5 9' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5 4.50002C5 4.39539 4.95927 4.29067 4.87792 4.21079L0.711272 0.119889C0.548461 -0.039963 0.284816 -0.039963 0.122109 0.119889C-0.0405988 0.279741 -0.0407029 0.538593 0.122109 0.698343L3.99417 4.50002L0.122108 8.30169C-0.0407033 8.46155 -0.0407033 8.7204 0.122108 8.88015C0.28492 9.0399 0.548564 9.04 0.711272 8.88015L4.87792 4.78925C4.95927 4.70937 5 4.60464 5 4.50002Z' fill='%23B2B2B2'/></svg>");
+                margin: 0 9px;
+            }
+        }
+
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}
+    }
+}

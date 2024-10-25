@@ -1,0 +1,23 @@
+@at-root{
+    $component: ".logo__text";
+
+    #{$component}{
+        width: 155px;
+        font-size: 12px;
+        line-height: 130%;
+
+        @include bp("sm", "up"){
+            width: 210px;
+            font-size: 16px;
+        }
+        @include bp("lg", "up"){}
+    }
+
+    .header__logo{
+        #{$component}{
+            strong{
+                color: get-color(blue);
+            }
+        }
+    }
+}

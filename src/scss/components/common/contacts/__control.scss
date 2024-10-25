@@ -1,0 +1,9 @@
+@at-root{
+    $component: ".contacts__control";
+
+    #{$component}{
+        
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}        
+    }
+}

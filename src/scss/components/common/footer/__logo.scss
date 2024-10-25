@@ -1,0 +1,17 @@
+@at-root{
+    $component: ".footer__logo";
+
+    #{$component}{
+        color: get-color(white);
+
+        @include bp("lg", "down"){
+            justify-content: center;
+        }
+        @include bp("sm", "up"){
+            flex-basis: 100%;
+        }
+        @include bp("lg", "up"){
+            flex-basis: 33%;
+        }
+    }
+}

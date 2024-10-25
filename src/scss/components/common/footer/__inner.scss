@@ -1,0 +1,16 @@
+@at-root{
+    $component: ".footer__inner";
+
+    #{$component}{
+        
+        @include bp("sm", "up"){
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        @include bp("lg", "up"){
+            flex-direction: row-reverse;
+            flex-wrap: nowrap;
+        }
+    }
+}

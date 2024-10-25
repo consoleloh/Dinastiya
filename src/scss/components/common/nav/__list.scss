@@ -1,0 +1,25 @@
+@at-root{
+    $component: ".nav__list";
+
+    #{$component}{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}
+    }
+
+    .page__footer{
+        #{$component}{
+
+            @include bp("sm", "down"){
+                margin-bottom: 20px;
+            }
+            @include bp("sm", "up"){
+                flex: 1;
+            }
+            @include bp("lg", "up"){}
+        }
+    }
+}

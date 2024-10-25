@@ -1,0 +1,49 @@
+@at-root{
+    $component: ".faq__item";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }        
+    }
+
+    .section--stages{
+        #{$component}{
+            counter-increment: stage;
+            flex-basis: 100%;
+    
+            @include bp("sm", "up"){
+                flex-basis: calc(50% - 25px);
+            }
+            @include bp("lg", "up"){
+                flex-basis: calc(100% / 3 - 34px);
+            }        
+        }
+    }
+
+    .section--warranty{
+        #{$component}{
+            flex-basis: 100%;
+    
+            @include bp("sm", "up"){
+                flex-basis: calc(50% - 25px);
+            }
+            @include bp("lg", "up"){
+                flex-basis: calc(100% / 3 - 34px);
+            }        
+        }
+    }
+
+    .section--faq{
+        #{$component}{
+            flex-basis: 100%;
+    
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+                flex-basis: calc(50% - 25px);
+            }        
+        }
+    }
+}

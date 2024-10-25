@@ -1,0 +1,21 @@
+header.header.page__header
+    ._container.container 
+        ._inner
+            figure.logo._logo
+                +picture("logo", ["png", "webp"], 50, 50)._image
+
+                figcaption._text 
+                    | Агентство премиальных знакомств 
+                    strong 
+                        | Династия
+            
+            ._contacts
+                a._contact(href="tel:+7 (910) 000-01-23")
+                    | +7 (910) 000-01-23
+
+                .socials._socials
+                    a.social._item(href="#" aria-label="whatsapp")
+                        +icon("whatsapp")._icon
+                        
+                    a.social._item(href="#" aria-label="telegram")
+                        +icon("telegram")._icon

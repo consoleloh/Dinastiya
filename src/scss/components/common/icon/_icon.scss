@@ -1,0 +1,17 @@
+@at-root{
+    $component: &;
+
+    #{$component}{
+        &--arrow-right{
+            @include icon(12, 20);
+        }
+
+        &--telegram{
+            @include icon(21, 18);
+        }
+
+        &--whatsapp{
+            @include icon(20, 20);
+        }
+    }
+}

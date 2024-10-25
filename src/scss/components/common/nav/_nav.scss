@@ -1,0 +1,13 @@
+@at-root{
+    $component: &;
+
+    #{$component}{
+    }
+
+    .page__footer{
+        #{$component}{
+            @include bp("sm", "up"){}
+            @include bp("lg", "up"){}    
+        }
+    }
+}

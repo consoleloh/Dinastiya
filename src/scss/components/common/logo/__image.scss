@@ -1,0 +1,23 @@
+@at-root{
+    $component: ".logo__image";
+
+    #{$component}{
+        @include bp("sm", "down"){
+            width: 30px;
+            height: 30px;
+        }
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}
+
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .page__footer{
+        #{$component}{
+        }
+    }
+}

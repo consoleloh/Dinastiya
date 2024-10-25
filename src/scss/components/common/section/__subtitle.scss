@@ -1,0 +1,31 @@
+@at-root{
+    $component: ".section__subtitle";
+
+    #{$component}{
+        margin-bottom: 30px;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+
+        @include bp("sm", "up"){
+            margin-bottom: 40px;
+        }
+        @include bp("lg", "up"){
+            margin-bottom: 50px;
+        }
+
+        strong{
+            color: get-color(blue);
+        }
+    }
+
+    .section--price{
+        #{$component}{
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+                flex-basis: 100%;
+            }
+        }
+    }
+}

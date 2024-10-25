@@ -1,0 +1,15 @@
+@at-root{
+    $component: ".cases__control";
+
+    #{$component}{
+        position: relative;
+
+        @include bp("sm", "up"){
+            flex-basis: calc(50% - 15px);
+        }
+        @include bp("lg", "up"){
+            flex-basis: calc(100% / 3 - 20px);
+            margin: 30px auto 0;
+        }
+    }
+}

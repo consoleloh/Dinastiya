@@ -1,0 +1,16 @@
+@at-root{
+    $component: ".section__team";
+
+    #{$component}{
+        display: flex;
+        gap: 30px;
+
+        @include bp("lg", "down"){
+            flex-wrap: wrap;
+        }
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+}

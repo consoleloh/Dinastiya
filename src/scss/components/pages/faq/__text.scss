@@ -1,0 +1,35 @@
+@at-root{
+    $component: ".faq__text";
+
+    #{$component}{
+        overflow: hidden;
+        max-height: 0;
+        padding-right: 40px;
+        transition: all 0.25s;
+
+        @include bp("sm", "down"){
+            font-size: 14px;
+        }
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){}
+
+        p:not(:last-child){
+            margin-bottom: 1em;
+        }
+
+        ol{
+            padding-left: 20px;
+        }
+        
+        &--collapsed{
+            max-height: 1000px;
+            padding-top: 10px;
+            transition: all 0.5s;
+
+            @include bp("sm", "up"){
+                padding-top: 20px;
+            }
+        }
+    }
+}

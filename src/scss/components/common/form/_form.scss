@@ -1,0 +1,14 @@
+@at-root{
+    $component: &;
+
+    #{$component}{
+        
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}
+
+        .wpcf7-form-control-wrap{
+            display: block;
+            width: 100%;
+        }
+    }
+}

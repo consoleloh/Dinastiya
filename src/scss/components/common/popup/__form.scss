@@ -1,0 +1,12 @@
+@at-root{
+    $component: ".popup__form";
+
+    #{$component}{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}
+    }
+}

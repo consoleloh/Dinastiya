@@ -1,0 +1,13 @@
+@at-root{
+    $component: ".person__name";
+
+    #{$component}{
+        font-weight: 700;
+        color: get-color(blue);
+
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+}

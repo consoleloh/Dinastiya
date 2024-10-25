@@ -1,0 +1,24 @@
+@at-root{
+    $component: ".section__contacts";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+
+    .section--consultation{
+        #{$component}{
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            align-items: center;
+
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+            }
+        }
+    }
+}

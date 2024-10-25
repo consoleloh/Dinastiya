@@ -1,0 +1,11 @@
+@at-root{
+    $component: ".header__inner";
+
+    #{$component}{
+        display: flex;
+        align-items: center;
+
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}        
+    }
+}

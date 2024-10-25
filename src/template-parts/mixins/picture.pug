@@ -1,0 +1,5 @@
+mixin picture(name, type, width, height)
+    picture(class!=attributes.class)
+        each val in type
+            source(srcset="img/" + name + "." + val type="image/" + val)
+        img(src="img/" + name + "." + type[0] width=width height=height alt=name loading="lazy")

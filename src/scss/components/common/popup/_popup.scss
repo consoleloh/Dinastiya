@@ -1,0 +1,21 @@
+@at-root{
+    $component: &;
+
+    #{$component}{
+        display: none;
+        position: relative;
+        width: 380px;
+        padding: 60px 20px;
+        border-radius: 8px;
+        background-color: get-color(white);
+        
+        @include bp("sm", "up"){
+            width: 640px;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        @include bp("lg", "up"){
+            width: 700px;
+        }
+    }
+}

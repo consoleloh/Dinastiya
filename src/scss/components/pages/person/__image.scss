@@ -1,0 +1,16 @@
+@at-root{
+    $component: ".person__image";
+
+    #{$component}{
+        margin-bottom: 10px;
+
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){}
+        
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

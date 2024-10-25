@@ -1,0 +1,16 @@
+@at-root{
+    $component: ".contacts__map";
+
+    #{$component}{
+        
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){
+            flex-basis: 50%;
+            flex-shrink: 0;
+        }
+        
+        iframe{
+            width: 100%;
+        }
+    }
+}

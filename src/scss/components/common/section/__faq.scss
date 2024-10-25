@@ -1,0 +1,20 @@
+@at-root{
+    $component: ".section__faq";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+
+    .section--warranty{
+        #{$component}{
+            margin-top: 50px;
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+            }
+        }
+    }
+}

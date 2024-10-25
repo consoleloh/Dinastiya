@@ -1,0 +1,23 @@
+@at-root{
+    $component: ".popup__title";
+
+    #{$component}{
+        margin-bottom: 20px;
+        font-family: "New_Zelek", sans-serif;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        text-align: center;
+        
+        @include bp("sm", "up"){
+            margin-bottom: 40px;
+            font-size: 30px;
+            line-height: 37px;
+        }
+        @include bp("lg", "up"){
+            margin-bottom: 30px;
+            font-size: 38px;
+            line-height: 47px;
+        }
+    }
+}

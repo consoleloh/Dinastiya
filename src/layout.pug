@@ -1,0 +1,29 @@
+block settings
+    -
+        const settings = {
+            page: {
+                name: '',
+                faq: []
+            }
+        };
+        
+include ./template-parts/mixins/mixins
+
+doctype html
+html(lang="ru")
+    head
+        include ./template-parts/common/meta
+
+    body.page#top(class="page--" + settings.page.name)
+        include ./template-parts/common/header
+
+        main._body
+            block content
+
+            include ./template-parts/common/team
+            include ./template-parts/common/faq
+            include ./template-parts/common/consultation
+
+        include ./template-parts/common/footer
+        include ./template-parts/common/popups
+        include ./template-parts/common/scripts
