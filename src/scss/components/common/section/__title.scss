@@ -18,31 +18,69 @@
 
     .section--hero{
         #{$component}{
-            max-width: 310px;
             text-align: left;
 
             @include bp("sm", "down"){
+                margin-right: auto;
                 margin-bottom: 20px;
+                margin-left: auto;
+                text-align: center;
+            }
+
+            @include bp("lg", "down"){
             }
             @include bp("sm", "up"){
-                max-width: 420px;
                 font-size: 32px;
                 line-height: 40px;
             }
             @include bp("lg", "up"){
-                max-width: 630px;
                 font-size: 48px;
                 line-height: 62px;
             }
         }
     }
 
+    .page--main{
+        .section--hero{
+            #{$component}{
+                max-width: 350px;
+    
+                @include bp("sm", "down"){
+                    text-align: center;
+                }
+                @include bp("sm", "up"){
+                    max-width: 500px;
+                }
+                @include bp("lg", "up"){
+                    max-width: 750px;
+                }
+            }
+        }
+    }
+
+    .page--men{
+        .section--hero{
+            #{$component}{
+                max-width: 310px;
+    
+                @include bp("sm", "down"){
+                }
+                @include bp("sm", "up"){
+                    max-width: 420px;
+                }
+                @include bp("lg", "up"){
+                    max-width: 630px;
+                }
+            }
+        }
+    }
+
     .section--advantages{
         #{$component}{
-            padding-top: 100px;
+            padding-top: 70px;
             background-position: top center;
             background-repeat: no-repeat;
-            background-size: 80px 80px;
+            background-size: 50px 50px;
 
             @include bp("lg", "down"){
                 margin-bottom: 10px;
@@ -50,7 +88,7 @@
             @include bp("sm", "up"){
             }
             @include bp("lg", "up"){
-                flex-basis: 200px;
+                flex-basis: 170px;
                 width: 300px;
                 margin-bottom: 0;
             }

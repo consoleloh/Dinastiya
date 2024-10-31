@@ -163,36 +163,14 @@
         window.addEventListener('resize', slider);
     };
 
-    const galleryPost = () => {
-        const postGalleryThumbs = new Swiper('.js-post-gallery-thumbs', {
+    const carouselTeam = () => {
+        const swiper = new Swiper('.js-carousel-team', {
             loop: false,
-            slidesPerView: 3,
-            spaceBetween: 8,
+            slidesPerView: 1,
             navigation: {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 3,
-                    scrollbar: {
-                        el: '.swiper-scrollbar',
-                        draggable: true
-                    }
-                },
-                768: {
-                    slidesPerView: 6
-                }
             }
-        });
-
-        const postGallery = new Swiper('.js-post-gallery', {
-            loop: false,
-            slidesPerView: 1,
-            spaceBetween: 0,
-            thumbs: {
-                swiper: postGalleryThumbs
-            },
         });
     };
 
@@ -205,4 +183,5 @@
     collapseFaq();
     // carouselBlog();
     // galleryPost();
+    carouselTeam();
 })();

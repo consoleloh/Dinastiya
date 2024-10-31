@@ -5,10 +5,9 @@
         padding: 50px 0;
 
         @include bp("sm", "up"){
-            padding: 80px 0;
+            padding: 70px 0;
         }
         @include bp("lg", "up"){
-            padding: 100px 0;
         }
 
         &:nth-child(3n-2){
@@ -18,15 +17,10 @@
         &:nth-child(3n-1){
             background-color: get-color(grey);
         }
-
         &--hero{
             display: flex;
             align-items: center;
-            background-image: url(../img/hero_bg.webp);
-            background-position: right 20% bottom;
             background-repeat: no-repeat;
-            background-blend-mode: darken;
-            background-size: 300px auto;
 
             @include bp("sm", "down"){
                 padding-top: 20px;
@@ -34,21 +28,64 @@
             }
 
             @include bp("sm", "up"){
-                min-height: calc(100vh - 80px);
-                max-height: 1080px;
-                background-position: right 5% bottom;
-                background-size: contain;
             }
             @include bp("lg", "up"){
-                background-position: right 20% bottom;
+                min-height: 720px;
+            }
+        }
+    }
+
+    .page--main{
+        #{$component}{
+            &--hero{
+                background-image: url(../img/hero_bg_main.webp);
+                background-position: center bottom;
+    
+                @include bp("sm", "down"){
+                    padding-bottom: 480px;
+                    background-size: 300px auto;
+                }
+    
+                @include bp("sm", "up"){
+                    background-position: right bottom;
+                    background-size: auto 590px;
+                }
+                @include bp("lg", "up"){
+                    background-position: right 10vw bottom;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+
+    .page--men{
+        #{$component}{
+            &--hero{
+                background-image: url(../img/hero_bg_men.webp);
+                background-position: center bottom;
+    
+                @include bp("sm", "down"){
+                    padding-bottom: 480px;
+                    background-size: 300px auto;
+                }
+    
+                @include bp("sm", "up"){
+                    background-position: right bottom;
+                    background-size: contain;
+                }
+                @include bp("lg", "up"){
+                    background-position: right 20% bottom;
+                }
             }
         }
     }
 
     .no-webp{
         #{$component}{
-            &--hero{
-                background-image: url(../img/hero_bg.jpg);
+            .page--men{
+                &--hero{
+                    background-image: url(../img/hero_bg_men.png);
+                }
             }
         }
     }

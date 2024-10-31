@@ -4,15 +4,30 @@ section.section.-faq#sectionFaq
             h2._title 
                 | Частые вопросы 
 
-            .faq._faq
-                each item in settings.page.faq
-                    ._item 
-                        h3._title
-                            != item.title
+            if settings.page.faq.men.length
+                if settings.page.name != "men"
+                    h3._subtitle
+                        | Мужчин
+                .faq._faq
+                    each item in settings.page.faq.men
+                        ._item 
+                            h3._title
+                                != item.title
 
-                        ._text
-                            != item.text
+                            ._text
+                                != item.text
+            ._delimiter
 
+            if settings.page.faq.women.length
+                if settings.page.name != "women"
+                    h3._subtitle
+                        | Женщин
 
+                .faq._faq
+                    each item in settings.page.faq.women
+                        ._item 
+                            h3._title
+                                != item.title
 
-                            
+                            ._text
+                                != item.text

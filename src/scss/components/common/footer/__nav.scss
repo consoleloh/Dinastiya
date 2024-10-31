@@ -2,7 +2,7 @@
     $component: ".footer__nav";
 
     #{$component}{
-        color: rgba(get-color(white), 0.5);
+        color: get-color(white);
         
         @include bp("sm", "up"){
             display: flex;

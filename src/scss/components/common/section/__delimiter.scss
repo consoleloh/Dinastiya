@@ -1,0 +1,17 @@
+@at-root{
+    $component: ".section__delimiter";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+
+    .section--cases,
+    .section--faq{
+        #{$component}{
+            padding: 40px 0;
+        }
+    }
+}

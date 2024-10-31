@@ -2,11 +2,13 @@
     $component: ".section__team";
 
     #{$component}{
-        display: flex;
-        gap: 30px;
+        // display: flex;
+        // gap: 30px;
+        max-width: 500px;
+        margin: 0 auto;
 
         @include bp("lg", "down"){
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
         }
         @include bp("sm", "up"){
         }

@@ -7,4 +7,15 @@
         @include bp("lg", "up"){
         }
     }
+
+    .section--hero{
+        #{$component}{
+            width: auto;
+
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+            }
+        }
+    }
 }

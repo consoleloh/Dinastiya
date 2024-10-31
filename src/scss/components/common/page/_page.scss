@@ -4,10 +4,10 @@
     #{$component}{
         display: flex;
         flex-direction: column;
-        padding-top: 50px;
+        // padding-top: 50px;
 
         @include bp("sm", "up"){
-            padding-top: 80px;
+            // padding-top: 80px;
         }
         @include bp("lg", "up"){
         }

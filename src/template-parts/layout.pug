@@ -1,0 +1,36 @@
+block settings
+    -
+        const settings = {
+            page: {
+                name: '',
+                cases: {
+                    men: [],
+                    women: []
+                },
+                faq: {
+                    men: [],
+                    women: []
+                }
+            }
+        };
+        
+include ./mixins/mixins
+
+doctype html
+html(lang="ru")
+    head
+        include ./common/meta
+
+    body.page#top(class="page--" + settings.page.name)
+        include ./common/header
+
+        main._body
+            block content
+
+            include ./common/team
+            include ./common/faq
+            include ./common/consultation
+
+        include ./common/footer
+        include ./common/popups
+        include ./common/scripts

@@ -2,12 +2,11 @@
     $component: ".header__contact";
 
     #{$component}{
-        font-size: 12px;
-        line-height: 100%;
+        font-size: 18px;
+        line-height: 1em;
         color: get-color(blue);
 
         @include bp("sm", "up"){
-            font-size: 24px;
         }
         @include bp("lg", "up"){
             transition: color 0.3s;

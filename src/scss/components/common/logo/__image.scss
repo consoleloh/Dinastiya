@@ -2,11 +2,18 @@
     $component: ".logo__image";
 
     #{$component}{
-        @include bp("sm", "down"){
-            width: 30px;
-            height: 30px;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        transform: translateY(-50%);
+        
+        @include bp("sm", "up"){
         }
-        @include bp("sm", "up"){}
         @include bp("lg", "up"){}
 
         img{

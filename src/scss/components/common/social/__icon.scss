@@ -9,7 +9,7 @@
     .header__socials{
         #{$component}{
             @include bp("sm", "down"){
-                font-size: 14px;
+                font-size: 20px;
             }
             @include bp("sm", "up"){}
             @include bp("lg", "up"){}        

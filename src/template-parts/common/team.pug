@@ -4,14 +4,17 @@ section.section.-team#sectionTeam
             h2._title 
                 | Команда
 
-            ._team
-                each i in [1, 2, 3, 4]
-                    .person
-                        +picture("team_person", ["jpg", "webp"], 380, 380)._image
+            ._team.swiper.js-carousel-team
+                .swiper-wrapper
+                    each i in [1, 2, 3, 4]
+                        .person.swiper-slide   
+                            +picture("team_person", ["jpg", "webp"], 380, 380)._image
 
-                        span._name 
-                            | Имя Фамилия
+                            span._name 
+                                | Имя Фамилия
 
-                        span._position 
-                            | Должность
+                            span._position 
+                                | Должность
 
+                .swiper-button-prev
+                .swiper-button-next

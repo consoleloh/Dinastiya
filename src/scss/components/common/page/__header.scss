@@ -2,12 +2,8 @@
     $component: ".page__header";
 
     #{$component}{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
+        padding: 10px 0;
         background-color: get-color(white);
-        z-index: 1000;
 
         @include bp("sm", "up"){
             padding: 15px 0;

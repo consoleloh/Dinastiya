@@ -1,6 +1,19 @@
 meta(charset="UTF-8")
 meta(name="viewport" content="width=device-width, initial-scale=1.0")
 meta(name="description" content="Агентство премиальных знакомств Династия")
+meta(name="apple-mobile-web-app-title" content="Dinastiya")
+link(rel="icon" type="image/png" href="img/favicon/favicon-48x48.png" sizes="48x48")
+link(rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg")
+link(rel="shortcut icon" href="img/favicon/favicon.ico")
+link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png")
+link(rel="manifest" href="img/favicon/site.webmanifest")
+
+if settings.page.name == "main"
+    link(rel="preload" fetchpriority="high" as="image" href="img/hero_bg_main.webp" type="image/webp")
+
+if settings.page.name == "men"
+    link(rel="preload" fetchpriority="high" as="image" href="img/hero_bg_men.webp" type="image/webp")
+
 link(rel="stylesheet" href="css/style.min.css")
 
 title Агентство премиальных знакомств Династия

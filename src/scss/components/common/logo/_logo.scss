@@ -4,9 +4,10 @@
     #{$component}{
         display: flex;
         align-items: center;
+        position: relative;
         column-gap: 5px;
-        height: 50px;
         margin: 0;
+        padding-left: 42px;
 
         @include bp("sm", "up"){
             column-gap: 10px;

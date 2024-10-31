@@ -11,6 +11,9 @@
     .section--hero{
         #{$component}{
 
+            @include bp("sm", "down"){
+                padding-left: 20px;
+            }
             @include bp("sm", "up"){
                 max-width: 420px;
                 font-size: 24px;
@@ -83,6 +86,16 @@
             }
             li:not(:last-child){
                 margin-bottom: 10px;
+            }
+        }
+    }
+
+    .section--price{
+        #{$component}{
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+                flex-basis: 40%;
             }
         }
     }

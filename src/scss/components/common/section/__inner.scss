@@ -23,7 +23,18 @@
         }
     }
 
-    .section--price,
+    .section--price{
+        #{$component}{
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 5%;
+            }
+        }
+    }
     .section--warranty{
         #{$component}{
             @include bp("sm", "up"){
