@@ -1,23 +1,23 @@
 @at-root{
-    $component: ".person__name";
+    $component: ".section__persons";
 
     #{$component}{
-        display: block;
-
         @include bp("sm", "up"){
         }
         @include bp("lg", "up"){
         }
     }
 
-    .section--team{
+    .page--ladies{
         #{$component}{
-            font-weight: 700;
-            color: get-color(blue);
-    
+            margin-bottom: 50px;
+
             @include bp("sm", "up"){
             }
             @include bp("lg", "up"){
+                display: flex;
+                column-gap: 30px;
+                margin-bottom: 80px;
             }
         }
     }

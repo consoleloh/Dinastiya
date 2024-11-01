@@ -5,7 +5,8 @@
         color: get-color(white);
 
         @include bp("lg", "down"){
-            justify-content: center;
+            flex-basis: 33%;
+            margin-bottom: 20px;
         }
         @include bp("sm", "up"){
             flex-basis: 100%;

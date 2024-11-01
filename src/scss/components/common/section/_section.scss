@@ -80,11 +80,44 @@
         }
     }
 
+    .page--ladies,
+    .page--women{
+        #{$component}{
+            &--hero{
+                background-image: url(../img/hero_bg_ladies.webp);
+                background-position: center bottom;
+    
+                @include bp("sm", "down"){
+                    padding-bottom: 480px;
+                    background-size: 300px auto;
+                }
+    
+                @include bp("sm", "up"){
+                    background-position: right 20% bottom;
+                    background-size: contain;
+                }
+                @include bp("lg", "up"){
+                }
+            }
+        }
+    }
+
     .no-webp{
         #{$component}{
+            .page--main{
+                &--hero{
+                    background-image: url(../img/hero_bg_main.png);
+                }
+            }
             .page--men{
                 &--hero{
                     background-image: url(../img/hero_bg_men.png);
+                }
+            }
+            .page--lediaes,
+            .page--women{
+                &--hero{
+                    background-image: url(../img/hero_bg_ledies.png);
                 }
             }
         }

@@ -1235,8 +1235,23 @@ button.swiper-pagination-bullet {
 	background-position: center bottom;
 }
 
+.page--ladies .section--hero,
+.page--women .section--hero {
+	background-image: url(../img/hero_bg_ladies.webp);
+	background-position: center bottom;
+}
+
+.no-webp .section .page--main--hero {
+	background-image: url(../img/hero_bg_main.png);
+}
+
 .no-webp .section .page--men--hero {
 	background-image: url(../img/hero_bg_men.png);
+}
+
+.no-webp .section .page--lediaes--hero,
+.no-webp .section .page--women--hero {
+	background-image: url(../img/hero_bg_ledies.png);
 }
 
 .section--advantages .section__inner {
@@ -1256,21 +1271,6 @@ button.swiper-pagination-bullet {
 	text-align: left;
 }
 
-.page--main .section--hero .section__title {
-	max-width: 350px;
-}
-
-.page--men .section--hero .section__title {
-	max-width: 310px;
-}
-
-.section--advantages .section__title {
-	padding-top: 70px;
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: 50px 50px;
-}
-
 .section--advantages .section__title--bg-clock {
 	background-image: url("data:image/svg+xml;utf8,<svg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11.5882 1C12.8733 1.00096 14.1445 1.26505 15.3235 1.776C16.5026 2.28695 17.5646 3.03394 18.444 3.97093C19.3233 4.90793 20.0015 6.01508 20.4368 7.22415C20.872 8.43323 21.055 9.71863 20.9745 11.0011C20.8941 12.2836 20.5518 13.5361 19.9689 14.6813C19.3859 15.8265 18.5747 16.8402 17.5851 17.6599C16.5955 18.4796 15.4485 19.088 14.2148 19.4476C12.9811 19.8071 11.6868 19.9103 10.4118 19.7506V18.5647C10.7961 18.6196 11.1882 18.6475 11.5882 18.6482C13.1862 18.6482 14.7497 18.1833 16.0881 17.3102C17.4264 16.437 18.4818 15.1933 19.1256 13.7308C19.7694 12.2682 19.9738 10.6499 19.7138 9.07317C19.4539 7.49646 18.7408 6.02944 17.6615 4.85097C16.5823 3.67249 15.1834 2.83348 13.6356 2.4362C12.0878 2.03892 10.4578 2.10056 8.9444 2.61358C7.43098 3.1266 6.09952 4.06885 5.11233 5.32546C4.12514 6.58207 3.52487 8.09875 3.38471 9.69059C2.90316 9.96209 2.49212 10.3429 2.18471 10.8024C2.13205 9.5346 2.33628 8.2693 2.78511 7.08249C3.23395 5.89568 3.91812 4.81189 4.79651 3.89625C5.67489 2.9806 6.72935 2.25203 7.8965 1.75431C9.06365 1.2566 10.3194 1.00002 11.5882 1ZM11 4.52941C11.1377 4.52937 11.271 4.57761 11.3768 4.66575C11.4825 4.75389 11.554 4.87634 11.5788 5.01176L11.5882 5.11765V10.4118H14.5294C14.6764 10.4115 14.8182 10.4663 14.9268 10.5653C15.0354 10.6643 15.103 10.8005 15.1163 10.9468C15.1296 11.0932 15.0876 11.2393 14.9986 11.3563C14.9095 11.4732 14.7799 11.5526 14.6353 11.5788L14.5294 11.5882H11C10.8623 11.5883 10.729 11.54 10.6232 11.4519C10.5175 11.3638 10.446 11.2413 10.4212 11.1059L10.4118 11V5.11765C10.4118 4.96164 10.4737 4.81202 10.5841 4.7017C10.6944 4.59139 10.844 4.52941 11 4.52941ZM2.76471 12.7647V13.9412H2.17647C1.86445 13.9412 1.56521 14.0651 1.34458 14.2858C1.12395 14.5064 1 14.8056 1 15.1176V19.8235C1 20.1355 1.12395 20.4348 1.34458 20.6554C1.56521 20.8761 1.86445 21 2.17647 21H8.05882C8.37084 21 8.67008 20.8761 8.89071 20.6554C9.11135 20.4348 9.23529 20.1355 9.23529 19.8235V15.1176C9.23529 14.8056 9.11135 14.5064 8.89071 14.2858C8.67008 14.0651 8.37084 13.9412 8.05882 13.9412H7.47059V12.7647C7.47059 12.1407 7.22269 11.5422 6.78143 11.1009C6.34017 10.6597 5.74169 10.4118 5.11765 10.4118C4.49361 10.4118 3.89513 10.6597 3.45387 11.1009C3.0126 11.5422 2.76471 12.1407 2.76471 12.7647ZM3.94118 13.9412V12.7647C3.94118 12.4527 4.06513 12.1534 4.28576 11.9328C4.50639 11.7122 4.80563 11.5882 5.11765 11.5882C5.42967 11.5882 5.72891 11.7122 5.94954 11.9328C6.17017 12.1534 6.29412 12.4527 6.29412 12.7647V13.9412H3.94118ZM5.11765 16.5882C5.35166 16.5882 5.57609 16.6812 5.74157 16.8467C5.90704 17.0121 6 17.2366 6 17.4706C6 17.7046 5.90704 17.929 5.74157 18.0945C5.57609 18.26 5.35166 18.3529 5.11765 18.3529C4.88363 18.3529 4.6592 18.26 4.49373 18.0945C4.32826 17.929 4.23529 17.7046 4.23529 17.4706C4.23529 17.2366 4.32826 17.0121 4.49373 16.8467C4.6592 16.6812 4.88363 16.5882 5.11765 16.5882Z' fill='%231A6A9D' stroke='%231A6A9D' stroke-width='0.75'/></svg>");
 }
@@ -1283,13 +1283,38 @@ button.swiper-pagination-bullet {
 	background-image: url("data:image/svg+xml;utf8,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15.7829 14.3914L20 18.6071L18.6071 20L14.3914 15.7829C13.0874 16.8229 11.5164 17.4739 9.8589 17.6611C8.20144 17.8482 6.5248 17.5639 5.02168 16.8409C3.51855 16.1178 2.24994 14.9853 1.36163 13.5735C0.473318 12.1618 0.001362 10.528 0 8.86C0.00113592 6.51028 0.935158 4.25715 2.59679 2.59578C4.25843 0.934416 6.51171 0.000757088 8.86143 0C10.5293 0.0016305 12.1629 0.473781 13.5744 1.3622C14.986 2.25061 16.1183 3.51925 16.8412 5.02232C17.5641 6.5254 17.8482 8.20192 17.661 9.85926C17.4738 11.5166 16.8228 13.0875 15.7829 14.3914ZM13.8086 13.66C14.7527 12.6884 15.3894 11.46 15.639 10.1284C15.8887 8.79687 15.7403 7.42126 15.2124 6.1736C14.6845 4.92594 13.8004 3.8616 12.6708 3.11368C11.5412 2.36577 10.2162 1.96746 8.86143 1.96857C7.95614 1.9682 7.05965 2.14623 6.2232 2.49249C5.38675 2.83876 4.62674 3.34647 3.98661 3.98661C3.34647 4.62674 2.83876 5.38675 2.49249 6.2232C2.14623 7.05965 1.9682 7.95614 1.96857 8.86143C1.96746 10.2162 2.36577 11.5412 3.11368 12.6708C3.8616 13.8004 4.92594 14.6845 6.1736 15.2124C7.42126 15.7403 8.79687 15.8887 10.1284 15.639C11.46 15.3894 12.6884 14.7527 13.66 13.8086L13.8086 13.66ZM10.0214 5.09571C9.73057 5.22654 9.47582 5.42603 9.27907 5.67703C9.08232 5.92804 8.94945 6.22306 8.89189 6.53675C8.83432 6.85044 8.85377 7.17342 8.94858 7.47793C9.04338 7.78244 9.21069 8.05938 9.43615 8.28496C9.6616 8.51054 9.93845 8.67801 10.2429 8.77298C10.5474 8.86794 10.8703 8.88757 11.1841 8.83018C11.4978 8.77278 11.7929 8.64008 12.044 8.44347C12.2951 8.24686 12.4947 7.99222 12.6257 7.70143C12.794 8.2436 12.8432 8.81573 12.7698 9.37866C12.6965 9.94159 12.5023 10.482 12.2007 10.9629C11.8991 11.4439 11.4971 11.8539 11.0222 12.1651C10.5474 12.4762 10.0109 12.6811 9.44957 12.7656C8.88821 12.8501 8.31521 12.8124 7.76981 12.6549C7.2244 12.4974 6.71947 12.2239 6.28958 11.8531C5.85969 11.4824 5.515 11.0231 5.27911 10.5067C5.04321 9.99035 4.92169 9.42912 4.92286 8.86143C4.92257 8.24479 5.06708 7.63669 5.34474 7.0861C5.62241 6.53551 6.02548 6.0578 6.5215 5.69145C7.01752 5.3251 7.59263 5.08034 8.20053 4.97686C8.80843 4.87339 9.43214 4.9141 10.0214 5.09571Z' fill='%231A6A9D'/></svg>");
 }
 
-.section--price .section__title {
-	margin-bottom: 10px;
-}
-
 .section--consultation .section__title {
 	max-width: 500px;
 	margin: 0 auto 30px;
+}
+
+.page--main .section--hero .section__title {
+	max-width: 350px;
+}
+
+.page--men .section--hero .section__title {
+	max-width: 310px;
+}
+
+.page--men .section--advantages .section__title {
+	padding-top: 70px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+
+.page--men .section--price .section__title {
+	margin-bottom: 10px;
+}
+
+.page--ladies .section--hero .section__title,
+.page--women .section--hero .section__title {
+	max-width: 310px;
+	margin-bottom: 0;
+}
+
+.page--women .section--price .section__title {
+	margin-bottom: 10px;
 }
 
 .section__subtitle {
@@ -1338,6 +1363,67 @@ button.swiper-pagination-bullet {
 	margin-bottom: 10px;
 }
 
+.section--benefits .section__text {
+	max-width: 350px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.section--benefits .section__text ol {
+	list-style: none;
+	counter-reset: benefits;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	margin: 0;
+	padding-left: 0;
+}
+
+.section--benefits .section__text li {
+	counter-increment: benefit;
+}
+
+.section--benefits .section__text li:before {
+	content: counter(benefit) ".";
+}
+
+.page--ladies .section--persons .section__text {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	line-height: 1.4em;
+}
+
+.page--ladies .section--persons .section__text strong {
+	font-size: 52px;
+	color: #1A6A9D;
+}
+
+.page--ladies .section--price .section__text {
+	text-align: center;
+}
+
+.page--ladies .section--price .section__text a {
+	color: #1A6A9D;
+}
+
+.page--ladies .section--questionnaire .section__text {
+	margin-bottom: 50px;
+	font-size: 20px;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+.page--women .section--price .section__text {
+	text-align: center;
+}
+
+.page--women .section--price .section__text p {
+	font-weight: 400;
+}
+
 .section--consultation .section__contacts {
 	display: flex;
 	flex-direction: column;
@@ -1360,6 +1446,13 @@ button.swiper-pagination-bullet {
 	width: auto;
 }
 
+.page--ladies .section--questionnaire .section__control,
+.page--ladies .section--women .section__control {
+	display: flex;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
 .section--cases .section__delimiter,
 .section--faq .section__delimiter {
 	padding: 40px 0;
@@ -1371,13 +1464,16 @@ button.swiper-pagination-bullet {
 	gap: 30px;
 }
 
-.section__team {
-	max-width: 500px;
-	margin: 0 auto;
-}
-
 .section--warranty .section__faq {
 	margin-top: 50px;
+}
+
+.page--ladies .section__persons {
+	margin-bottom: 50px;
+}
+
+.section--steps .section__steps {
+	display: flex;
 }
 
 .footer__logo {
@@ -1544,9 +1640,12 @@ button.swiper-pagination-bullet {
 	background-color: #FFFFFF;
 }
 
-.section--team .person {
+.person {
 	display: flex;
 	flex-direction: column;
+}
+
+.section--team .person {
 	align-items: center;
 }
 
@@ -1555,8 +1654,14 @@ button.swiper-pagination-bullet {
 	color: #1A6A9D;
 }
 
-.person__image {
-	margin-bottom: 10px;
+.section--persons .person {
+	row-gap: 15px;
+}
+
+.section--benefits .person {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-basis: 50%;
 }
 
 .person__image img {
@@ -1564,8 +1669,42 @@ button.swiper-pagination-bullet {
 	height: auto;
 }
 
+.section--team .person__image {
+	margin-bottom: 10px;
+}
+
 .person__name {
+	display: block;
+}
+
+.section--team .person__name {
 	font-weight: 700;
+	color: #1A6A9D;
+}
+
+.section--persons .person__text:before,
+.section--persons .person__text:after,
+.section--benefits .person__text:before,
+.section--benefits .person__text:after {
+	content: '"';
+}
+
+.section--persons .person__text {
+	text-align: right;
+}
+
+.section--benefits .person__text {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.steps__item {
+	text-align: center;
+}
+
+.step__title {
+	margin-bottom: 15px;
+	text-transform: uppercase;
 	color: #1A6A9D;
 }
 
@@ -1696,6 +1835,12 @@ button.swiper-pagination-bullet {
 	background-size: contain;
 }
 
+.page--ladies .section--hero,
+.page--women .section--hero {
+	background-position: right 20% bottom;
+	background-size: contain;
+}
+
 .section__title {
 	margin-bottom: 40px;
 }
@@ -1713,6 +1858,17 @@ button.swiper-pagination-bullet {
 	max-width: 420px;
 }
 
+.page--ladies .section--hero .section__title,
+.page--women .section--hero .section__title {
+	max-width: 420px;
+}
+
+.page--ladies .section--women .section__title {
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .section__subtitle {
 	margin-bottom: 40px;
 }
@@ -1727,6 +1883,21 @@ button.swiper-pagination-bullet {
 	font-size: 18px;
 }
 
+.section--benefits .section__text {
+	max-width: 400px;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.page--ladies .section--persons .section__text {
+	column-gap: 15px;
+}
+
+.page--ladies .section--persons .section__text strong {
+	font-size: 54px;
+	line-height: 1em;
+}
+
 .section--consultation .section__contact {
 	font-size: 32px;
 }
@@ -1734,6 +1905,13 @@ button.swiper-pagination-bullet {
 .section--hero .section__controls {
 	max-width: 500px;
 	margin-top: 60px;
+}
+
+.section--steps .section__steps {
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 30px;
+	row-gap: 50px;
 }
 
 .footer__inner {
@@ -1774,6 +1952,24 @@ button.swiper-pagination-bullet {
 }
 
 .cases__control {
+	flex-basis: calc(50% - 15px);
+}
+
+.section--benefits .person__image {
+	flex-basis: 50%;
+}
+
+.section--benefits .person__text {
+	flex-basis: 50%;
+	padding-right: 25px;
+}
+
+.steps__item {
+	flex-shrink: 0;
+	flex-basis: calc(50% - 15px);
+}
+
+.step__text {
 	flex-basis: calc(50% - 15px);
 }
 
@@ -1840,7 +2036,6 @@ button.swiper-pagination-bullet {
 	flex-wrap: wrap;
 	align-items: center;
 	column-gap: 30px;
-	height: 250px;
 }
 
 .section--price .section__inner {
@@ -1856,6 +2051,20 @@ button.swiper-pagination-bullet {
 	column-gap: 10%;
 }
 
+.section--benefits .section__inner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page--men .section--advantages .section__inner {
+	height: 250px;
+}
+
+.page--ladies .section--advantages .section__inner {
+	justify-content: space-between;
+	height: 400px;
+}
+
 .section__title {
 	margin-bottom: 50px;
 }
@@ -1863,6 +2072,16 @@ button.swiper-pagination-bullet {
 .section--hero .section__title {
 	font-size: 48px;
 	line-height: 62px;
+}
+
+.section--warranty .section__title {
+	flex-basis: 100%;
+}
+
+.section--benefits .section__title {
+	flex-basis: 50%;
+	margin-right: 25%;
+	margin-left: 25%;
 }
 
 .page--main .section--hero .section__title {
@@ -1873,17 +2092,27 @@ button.swiper-pagination-bullet {
 	max-width: 630px;
 }
 
-.section--advantages .section__title {
+.page--men .section--advantages .section__title {
 	flex-basis: 170px;
 	width: 300px;
 	margin-bottom: 0;
 }
 
-.section--price .section__title {
+.page--men .section--price .section__title {
 	flex-basis: 100%;
 }
 
-.section--warranty .section__title {
+.page--ladies .section--hero .section__title,
+.page--women .section--hero .section__title {
+	max-width: 500px;
+}
+
+.page--ladies .section--advantages .section__title {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.page--ladies .section--price .section__title {
 	flex-basis: 100%;
 }
 
@@ -1913,13 +2142,55 @@ button.swiper-pagination-bullet {
 	flex-basis: 40%;
 }
 
+.section--benefits .section__text {
+	flex-basis: 50%;
+	max-width: none;
+}
+
+.page--ladies .section--advantages .section__text {
+	min-height: 80px;
+}
+
+.page--ladies .section--persons .section__text {
+	font-size: 24px;
+}
+
+.page--ladies .section--persons .section__text strong {
+	font-size: 64px;
+}
+
+.page--ladies .section--price .section__text {
+	flex-basis: 45%;
+}
+
+.page--ladies .section--questionnaire .section__text {
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.page--women .section--price .section__text {
+	flex-basis: 50%;
+}
+
 .section--hero .section__controls {
 	max-width: 630px;
 	justify-content: center;
 }
 
+.section__team {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.page--ladies .section__persons {
+	display: flex;
+	column-gap: 30px;
+	margin-bottom: 80px;
+}
+
 .footer__inner {
-	flex-direction: row-reverse;
 	flex-wrap: nowrap;
 }
 
@@ -1953,6 +2224,31 @@ button.swiper-pagination-bullet {
 	margin: 30px auto 0;
 }
 
+.section--team .swiper-wrapper {
+	column-gap: 25px;
+}
+
+.section--team .swiper-button-prev,
+.section--team .swiper-button-next {
+	display: none;
+}
+
+.section--benefits .person__image {
+	flex-basis: 40%;
+}
+
+.section--benefits .person__text {
+	flex-basis: 60%;
+}
+
+.steps__item {
+	flex-basis: calc(33.3333333333% - 20px);
+}
+
+.step__text {
+	flex-basis: calc(33.3333333333% - 20px);
+}
+
 .faq {
 	gap: 50px;
 }
@@ -1978,7 +2274,7 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 1189px) {
 
-.section--advantages .section__title {
+.page--men .section--advantages .section__title {
 	margin-bottom: 10px;
 }
 
@@ -1991,8 +2287,27 @@ button.swiper-pagination-bullet {
 	margin-bottom: 30px;
 }
 
+.section--benefits .section__text {
+	margin-bottom: 50px;
+}
+
+.page--women .section--price .section__text {
+	max-width: 580px;
+	margin: 0 auto;
+}
+
+.section__team {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
 .footer__logo {
-	justify-content: center;
+	flex-basis: 33%;
+	margin-bottom: 20px;
+}
+
+.section--persons .persons__item:not(:last-child) {
+	margin-bottom: 50px;
 }
 
 }
@@ -2023,6 +2338,12 @@ button.swiper-pagination-bullet {
 	background-size: 300px auto;
 }
 
+.page--ladies .section--hero,
+.page--women .section--hero {
+	padding-bottom: 480px;
+	background-size: 300px auto;
+}
+
 .section--hero .section__title {
 	margin-right: auto;
 	margin-bottom: 20px;
@@ -2038,6 +2359,15 @@ button.swiper-pagination-bullet {
 	padding-left: 20px;
 }
 
+.page--ladies .section--persons .section__text {
+	flex-direction: column;
+	text-align: center;
+}
+
+.page--ladies .section--persons .section__text strong {
+	margin-bottom: 20px;
+}
+
 .section--hero .section__controls {
 	flex-direction: column;
 	align-items: center;
@@ -2050,6 +2380,11 @@ button.swiper-pagination-bullet {
 	flex-direction: column;
 }
 
+.section--steps .section__steps {
+	flex-direction: column;
+	row-gap: 50px;
+}
+
 .page__footer .nav__list {
 	margin-bottom: 20px;
 }
@@ -2060,6 +2395,14 @@ button.swiper-pagination-bullet {
 
 .header__socials .social__icon {
 	font-size: 20px;
+}
+
+.section--benefits .person {
+	flex-direction: column;
+}
+
+.section--benefits .person__image {
+	margin-bottom: 15px;
 }
 
 .faq__text {

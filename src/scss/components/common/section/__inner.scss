@@ -18,7 +18,6 @@
                 flex-wrap: wrap;
                 align-items: center;
                 column-gap: 30px;
-                height: 250px;
             }
         }
     }
@@ -43,6 +42,37 @@
                 display: flex;
                 flex-wrap: wrap;
                 column-gap: 10%;
+            }
+        }
+    }
+    .section--benefits{
+        #{$component}{
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .page--men{
+        .section--advantages{
+            #{$component}{
+                @include bp("lg", "up"){
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .page--ladies{
+        .section--advantages{
+            #{$component}{
+                @include bp("lg", "up"){
+                    justify-content: space-between;
+                    height: 400px;
+                }
             }
         }
     }

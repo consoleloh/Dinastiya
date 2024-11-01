@@ -18,4 +18,19 @@
             }
         }
     }
+    .page--ladies{
+        .section--questionnaire,
+        .section--women{
+            #{$component}{
+                display: flex;
+                max-width: 300px;
+                margin: 0 auto;
+
+                @include bp("sm", "up"){
+                }
+                @include bp("lg", "up"){
+                }
+            }
+        }
+    }
 }

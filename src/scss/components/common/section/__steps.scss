@@ -1,0 +1,29 @@
+@at-root{
+    $component: ".section__steps";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+
+    .section--steps{
+        #{$component}{
+            display: flex;
+
+            @include bp("sm", "down"){
+                flex-direction: column;
+                row-gap: 50px;
+            }
+            @include bp("sm", "up"){
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 30px;
+                row-gap: 50px;
+            }
+            @include bp("lg", "up"){
+            }
+        }
+    }
+}

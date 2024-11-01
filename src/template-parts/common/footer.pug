@@ -1,6 +1,14 @@
 footer.footer.page__footer
     ._container.container 
         ._inner
+            figure.logo._logo
+                +picture("logo", ["png", "webp"], 50, 50)._image
+
+                figcaption._text 
+                    | Агентство премиальных знакомств 
+                    strong 
+                        | Династия
+                        
             nav.nav._nav 
                 ul._list 
                     li._item 
@@ -36,11 +44,3 @@ footer.footer.page__footer
                     li._item 
                         a._link(href="#")
                             | Политика конфиденциальности
-
-            figure.logo._logo
-                +picture("logo", ["png", "webp"], 50, 50)._image
-
-                figcaption._text 
-                    | Агентство премиальных знакомств 
-                    strong 
-                        | Династия

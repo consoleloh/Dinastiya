@@ -9,7 +9,6 @@
             align-items: flex-start;
         }
         @include bp("lg", "up"){
-            flex-direction: row-reverse;
             flex-wrap: nowrap;
         }
     }

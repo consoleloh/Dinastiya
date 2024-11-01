@@ -1,0 +1,35 @@
+section.section.-persons#sectionPersons 
+    ._container.container 
+        ._inner 
+            h2._title 
+                | Наши мужчины и их цели
+
+            .persons._persons
+                each i in [1, 2, 3]
+                    .person._item 
+                        +picture("men_person", ["jpg", "webp"], 380, 380)._image
+
+                        span._name 
+                            strong 
+                                | БОРИС, МОСКВА 
+                                br 
+                                | 52 ГОДА 
+                            br
+                            | В поисках девушки 30-43 лет
+
+
+                        span._position 
+                            | Руководитель крупной строительной компании. 
+                            | Без вредных привычек, приверженец ЗОЖ.
+
+                        cite._text 
+                            | Я занятой человек и времени переписки в интернете просто нет. 
+
+            
+            p._text 
+                strong 
+                    | >17 
+                
+                span 
+                    | успешных мужчин из Москвы, Санкт-Петербурга, Дубая и других 
+                    | регионов мира становятся нашими клиентами каждый месяц.

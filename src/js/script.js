@@ -164,14 +164,37 @@
     };
 
     const carouselTeam = () => {
-        const swiper = new Swiper('.js-carousel-team', {
-            loop: false,
-            slidesPerView: 1,
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+        const mql = window.matchMedia('(max-width: 1190px)');
+        const teamSlides = document.querySelectorAll('.js-carousel-team-person');
+
+        const slider = () => {
+            let swiper;
+
+            if (mql.matches) {
+                teamSlides.forEach(slide => {
+                    slide.classList.add('swiper-slide');
+                });
+
+                const swiper = new Swiper('.js-carousel-team', {
+                    loop: false,
+                    slidesPerView: 1,
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    }
+                });
+            } else {
+                if (swiper) swiper.destroy();
+                
+                teamSlides.forEach(slide => {
+                    slide.classList.remove('swiper-slide');
+                    slide.attributeStyleMap.clear();
+                });
             }
-        });
+        }
+
+        window.addEventListener('load', slider);
+        window.addEventListener('resize', slider);
     };
 
     checkWEBP();

@@ -1,0 +1,24 @@
+@at-root{
+    $component: ".persons__item";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+
+    .section--persons{
+        #{$component}{
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){}
+
+            &:not(:last-child){
+                @include bp("lg", "down"){
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}

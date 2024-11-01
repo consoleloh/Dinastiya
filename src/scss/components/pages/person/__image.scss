@@ -2,7 +2,6 @@
     $component: ".person__image";
 
     #{$component}{
-        margin-bottom: 10px;
 
         @include bp("sm", "up"){
         }
@@ -11,6 +10,31 @@
         img{
             width: 100%;
             height: auto;
+        }
+    }
+
+    .section--team{
+        #{$component}{
+            margin-bottom: 10px;
+    
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){}
+        }
+    }
+
+    .section--benefits{
+        #{$component}{
+
+            @include bp("sm", "down"){
+                margin-bottom: 15px;
+            }
+            @include bp("sm", "up"){
+                flex-basis: 50%;
+            }
+            @include bp("lg", "up"){
+                flex-basis: 40%;
+            }
         }
     }
 }

@@ -1,0 +1,48 @@
+@at-root{
+    $component: ".person__text";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){}
+    }
+
+    .section--persons,
+    .section--benefits{
+        #{$component}{
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){}
+
+            &:before,
+            &:after{
+                content: "\"";
+            }
+        }
+    }
+
+    .section--persons{
+        #{$component}{
+            text-align: right;
+
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){}
+        }
+    }
+
+    .section--benefits{
+        #{$component}{
+            font-size: 20px;
+            line-height: 28px;
+            
+            @include bp("sm", "up"){
+                flex-basis: 50%;
+                padding-right: 25px;
+            }
+            @include bp("lg", "up"){
+                flex-basis: 60%;
+            }
+        }
+    }
+}

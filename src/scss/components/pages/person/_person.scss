@@ -2,6 +2,9 @@
     $component: &;
 
     #{$component}{
+        display: flex;
+        flex-direction: column;
+
         @include bp("sm", "up"){
         }
         @include bp("lg", "up"){
@@ -10,8 +13,6 @@
 
     .section--team{
         #{$component}{
-            display: flex;
-            flex-direction: column;
             align-items: center;
 
             @include bp("sm", "up"){
@@ -20,9 +21,47 @@
             }
         }
 
+        .swiper-wrapper{
+            @include bp("lg", "up"){
+                column-gap: 25px;
+            }
+        }
+
         .swiper-button-prev,
         .swiper-button-next{
             color: get-color(blue);
+
+            @include bp("lg", "up"){
+                display: none;
+            }
+        }
+    }
+
+    .section--persons{
+        #{$component}{
+            row-gap: 15px;
+            
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+            }
+        }
+    }
+
+    .section--benefits{
+        #{$component}{
+            display: flex;
+            flex-direction: row-reverse;
+            // align-items: center;
+            flex-basis: 50%;
+            
+            @include bp("sm", "down"){
+                flex-direction: column;
+            }
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+            }
         }
     }
 }

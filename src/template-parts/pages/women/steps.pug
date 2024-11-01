@@ -1,0 +1,14 @@
+section.section.-steps#sectionSteps 
+    ._container.container 
+        ._inner 
+            h2._title 
+                | Как мы находим пару для статусных женщин
+
+            .steps._steps 
+                each step in settings.page.steps
+                    .step._item 
+                        h3._title
+                            != step.title 
+
+                        ._text 
+                            != step.text 

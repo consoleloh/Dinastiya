@@ -99,4 +99,143 @@
             }
         }
     }
+    .section--benefits{
+        #{$component}{
+            max-width: 350px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 20px;
+            line-height: 24px;
+
+            @include bp("lg", "down"){
+                margin-bottom: 50px;
+                // text-align: center;
+            }
+            @include bp("sm", "up"){
+                max-width: 400px;
+                font-size: 24px;
+                line-height: 28px;
+            }
+            @include bp("lg", "up"){
+                flex-basis: 50%;
+                max-width: none;
+            }
+
+            ol{
+                list-style: none;
+                counter-reset: benefits;
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+                margin: 0;
+                padding-left: 0;
+            }
+
+            li{
+                counter-increment: benefit;
+
+                &:before{
+                    content: counter(benefit) ".";
+                }
+            }
+        }
+    }
+
+    .page--ladies{
+        .section--advantages{
+            #{$component}{
+                @include bp("lg", "up"){
+                    min-height: 80px;
+                }
+            }
+        }
+        .section--persons{
+            #{$component}{
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                line-height: 1.4em;
+
+                @include bp("sm", "down"){
+                    flex-direction: column;
+                    text-align: center;
+                }
+                @include bp("sm", "up"){
+                    column-gap: 15px;
+                }
+                @include bp("lg", "up"){
+                    font-size: 24px;
+                }
+
+                strong{
+                    font-size: 52px;
+                    color: get-color(blue);
+
+                    @include bp("sm", "down"){
+                        margin-bottom: 20px;
+                    }
+                    @include bp("sm", "up"){
+                        font-size: 54px;
+                        line-height: 1em;
+                    }
+                    @include bp("lg", "up"){
+                        font-size: 64px;
+                    }
+                }
+            }
+        }
+
+        .section--price{
+            #{$component}{
+                text-align: center;
+
+                @include bp("sm", "up"){
+                }
+                @include bp("lg", "up"){
+                    flex-basis: 45%;
+                }
+
+                a{
+                    color: get-color(blue);
+                }
+            }
+        }
+
+        .section--questionnaire{
+            #{$component}{
+                margin-bottom: 50px;
+                font-size: 20px;
+                line-height: 1.4em;
+                text-align: center;
+
+                @include bp("sm", "up"){
+                }
+                @include bp("lg", "up"){
+                    max-width: 600px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+    .page--women{
+        .section--price{
+            #{$component}{
+                text-align: center;
+
+                @include bp("lg", "down"){
+                    max-width: 580px;
+                    margin: 0 auto;
+                }
+                @include bp("lg", "up"){
+                    flex-basis: 50%;
+                }
+
+                p{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
 }
